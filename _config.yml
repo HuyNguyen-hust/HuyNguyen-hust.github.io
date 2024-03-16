@@ -32,12 +32,10 @@ description: >-
   My recent work has focused on exploring novel methods for Information Extraction tasks and Large Language Models (LLMs).
   
   
-  Aside from research, I am also a big fan of [Doraemon](https://en.wikipedia.org/wiki/Doraemon) and used to dream of becoming the next Dragon Warrior like [Po](https://kungfupanda.fandom.com/wiki/Po).
-  
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://chiennv2000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: chiennv2000
-github_username: chiennv2000
+url: "https://huynguyenhust.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: huynguyen_hust
+github_username: huynguyen_hust
 google_scholar: fW5HEnEAAAAJ
 
 # Build settings

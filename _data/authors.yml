@@ -1,16 +1,21 @@
+huuhuy:
+  first_name: Huy
+  middle_name: Huu
+  last_name: Nguyen
+  website: https://huynguyenhust.github.io/
+  is_me: true
+
 chiennv2000:
   first_name: Chien
   middle_name: Van	
   last_name: Nguyen
   website: https://chiennv2000.github.io/
-  is_me: true
 
 chiennv2000eq:
   first_name: Chien
   middle_name: Van  
   last_name: Nguyen*
   website: https://chiennv2000.github.io/
-  is_me: true
 
 thiennh:
   first_name: Thien
@@ -28,12 +33,6 @@ hieuman:
   first_name: Hieu
   last_name: Man
   website: https://github.com/ManHieu/
-
-huuhuy:
-  first_name: Huy
-  middle_name: Huu
-  last_name: Nguyen
-  website: https://www.linkedin.com/in/h%E1%BB%AFu-huy-nguy%E1%BB%85n-97832a1b4/
 
 anhtuan:
   first_name: Anh
@@ -55,7 +54,6 @@ vietlaieq:
   first_name: Viet
   last_name: Lai*
   website: https://laiviet.github.io/
-
 
 nghiango:
   first_name: Nghia

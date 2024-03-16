@@ -1,17 +1,3 @@
-- id: culturax
-  title: "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages"
-  venue: LREC-Coling 2024
-  description: "We introduced a largest multilingual dataset with 6.3 trillion tokens in 167 languages, readily usable for Large Language Models (LLMs) development"
-  authors:
-    - thuatnguyen
-    - chiennv2000
-    - vietlai
-    - hieuman
-    - nghiango
-    - frack
-    - rossi
-    - thiennh
-
 - id: ebmcled
   title: "Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics"
   venue: EMNLP 2023 (Findings)
@@ -22,20 +8,7 @@
     - frack
     - thiennh
 
-- id: okapi
-  title: "Okapi: Instruction-tuned Large Language Models in Multiple Languages with Reinforcement Learning"
-  venue: EMNLP 2023 (Demonstration)
-  description: "A framework that introduces resources and models for instruction tuning for LLMs with RLHF in 26 languages."
-  authors:
-    - vietlaieq
-    - chiennv2000eq
-    - nghiango
-    - thuatnguyen
-    - frack
-    - rossi
-    - thiennh
-
-- id: okapi
+- id: cre
   title: "A Spectral Viewpoint on Continual Relation Extraction"
   venue: EMNLP 2023 (Findings)
   description: "A novel method for Continual Relation Extraction (CRE) with Feature Decorrelation."
@@ -44,22 +17,4 @@
     - chiennv2000
     - linhnv
     - anhtuan
-    - thiennh
-
-- id: retrievalcled
-  title: "Retrieving Relevant Context to Align Representations for Cross-lingual Event Detection"
-  venue: ACL 2023 (Findings)
-  description: "A new approach for the cross-lingual transfer learning problem in Event Detection using Retrieval-Augmented method."
-  authors:
-    - chiennv2000
-    - linhnv
-    - thiennh
-
-- id: doceae
-  title: "Contextualized Soft Prompts for Extraction of Event Arguments"
-  venue: ACL 2023 (Findings)
-  description: "A novel approach for document-level Event Argument Extraction (EAE) using graph-based soft prompts with better customizability and stability."
-  authors:
-    - chiennv2000
-    - hieuman
     - thiennh
