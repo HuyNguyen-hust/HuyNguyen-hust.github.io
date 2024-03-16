@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Chien Nguyen
-name: Chien Nguyen
+title: Huy Nguyen
+name: Huy Nguyen
 position: Research Resident 
-email: chiennv.hust@gmail.com
+email: huynguyen.hust@gmail.com
 description: >-
   I am a Ph.D. student in Computer Science at the University of Oregon, where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
   Prior to this, I completed my Bachelor's degree in Computer Science at [Hanoi University of Science and Technology](https://hust.edu.vn/), under the supervision of [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
@@ -36,7 +36,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://huynguyenhust.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: huynguyen_hust
 github_username: huynguyen_hust
-google_scholar: fW5HEnEAAAAJ
+google_scholar: 
 
 # Build settings
 theme: minima
