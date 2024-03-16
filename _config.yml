@@ -23,19 +23,17 @@ name: Huy Nguyen
 position: Research Resident 
 email: huynguyen.hust@gmail.com
 description: >-
-  I am a Ph.D. student in Computer Science at the University of Oregon, where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
+  I am a research resident in Natural Language Processing Group at [VinAI Research, Vietnam](https://www.vinai.io/) where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) and [Prof. Tuan Luu](https://tuanluu.github.io/).
   Prior to this, I completed my Bachelor's degree in Computer Science at [Hanoi University of Science and Technology](https://hust.edu.vn/), under the supervision of [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
-  Before joining UoO, I had two wonderful years working as an AI Research Resident in Natural Language Processing Group at [VinAI Research, Vietnam](https://www.vinai.io/).
-
 
   My Research Interests focus on Machine Learning, Natural Language Processing and their intersection.
   My recent work has focused on exploring novel methods for Information Extraction tasks and Large Language Models (LLMs).
   
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://huynguyenhust.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://huynguyen-hust.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: huynguyen_hust
-github_username: huynguyen_hust
+github_username: HuyNguyen-hust
 google_scholar: 
 
 # Build settings
