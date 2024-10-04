@@ -1,3 +1,9 @@
+- name: University of Oregon
+  description: >-
+    Ph.D. in Computer Science, advised by <a href="https://ix.cs.uoregon.edu/~thien/">Prof. Thien Huu Nguyen</a>.
+  dates: Fall 2024 - Present
+  location: Eugene, Oregon, USA
+
 - name: Hanoi University of Science and Technology
   description: >-
     B.S. in Computer Science, advised by <a href="https://scholar.google.com.vn/citations?user=tZ78MoQAAAAJ&hl=en">Dr. Linh Ngo Van</a>.

@@ -1,3 +1,11 @@
+- date: Sept 2024
+  description: >-
+    I am a PhD student in Computer Science at the University of Oregon, where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
+
+- date: Mar 2024
+  description: >-
+    I implemented a faster RoPE embedding for Unsloth [PR](https://github.com/unslothai/unsloth/pull/238)
+
 - date: Jan 2024
   description: >-
     We introduced [Vistral](https://huggingface.co/Viet-Mistral/Vistral-7B-Chat), a state-of-the-art conversational LLM for Vietnamese.

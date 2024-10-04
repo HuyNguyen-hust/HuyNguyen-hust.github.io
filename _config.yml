@@ -21,20 +21,22 @@
 title: Huy Nguyen
 name: Huy Nguyen
 position: Research Resident 
-email: huynguyen.hust@gmail.com
+email: huy.nguyenhuu.hust@gmail.com
 description: >-
-  I am a research resident in Natural Language Processing Group at [VinAI Research, Vietnam](https://www.vinai.io/) where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) and [Prof. Tuan Luu](https://tuanluu.github.io/).
-  Prior to this, I completed my Bachelor's degree in Computer Science at [Hanoi University of Science and Technology](https://hust.edu.vn/), under the supervision of [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
+  I am a PhD student in Computer Science at the University of Oregon, where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/). My research focuses on Natural Language Processing (NLP) with an emphasis on Large Language Models (LLMs) for low-resource languages and efficient LLMs.
 
-  My Research Interests focus on Machine Learning, Natural Language Processing and their intersection.
-  My recent work has focused on exploring novel methods for Information Extraction tasks and Large Language Models (LLMs).
+
+  Prior to this, I completed my Bachelor's degree in Computer Science at [Hanoi University of Science and Technology](https://hust.edu.vn/) from September 2018 to May 2023, graduating with an Excellent Degree and a GPA of 3.71/4.0. During my undergraduate studies, I was under the supervision of [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
+
+
+  Currently, I am exploring Efficient Large Language Models (LLMs) and Machine Learning Systems (MLSys) to enhance training optimization and develop scalable architectures for improved performance and resource management.
   
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://huynguyen-hust.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: huynguyen_hust
 github_username: HuyNguyen-hust
-google_scholar: 
+google_scholar: https://scholar.google.com/citations?user=LAvXOdUAAAAJ&hl=vi
 
 # Build settings
 theme: minima
