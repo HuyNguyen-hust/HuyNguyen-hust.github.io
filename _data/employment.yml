@@ -1,14 +1,12 @@
+- company: Microsoft Research
+  description: >-
+    Research Intern. Engineered and optimized "Megakernels" on NVIDIA GPUs to accelerate LLM inference and reduce memory-bound latency. Designed low-level scheduling methods and custom fused operators using CUDA/Triton, maximizing hardware utilization.
+  dates: "Jun 2025 - Sep 2025"
+  location: Redmond, WA, USA
+
 - company: VinAI Research
   description: >-
-    Research Resident on the Natural Language Processing Group.
+    Research AI Resident on the Natural Language Processing Group.
     Worked on Information Extraction tasks and Large Language Models (LLMs).
-  dates: "July 2022 - Present"
+  dates: "Jul 2022 - Jul 2024"
   location: Hanoi, Vietnam
-
-
-- company: Pixta Vietnam
-  description: >-
-    AI Intern on the RnD team.
-    Developed and deployed an Image Captioning system for Japanese.
-  dates: "Jun 2021 - Sep 2021"
-  location: Ha Noi, Vietnam

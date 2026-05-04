@@ -70,3 +70,48 @@ rossi:
   first_name: Ryan
   last_name: A Rossi
   website: http://ryanrossi.com/
+
+thangle:
+  first_name: Thang
+  last_name: Le
+  website: https://scholar.google.com
+
+ruyzhang:
+  first_name: Ruiyi
+  last_name: Zhang
+  website: https://scholar.google.com
+
+thamar:
+  first_name: Thamar
+  last_name: Solorio
+  website: https://scholar.google.com
+
+haniehd:
+  first_name: Hanieh
+  last_name: Deilamsalehy
+  website: https://scholar.google.com
+
+puneetm:
+  first_name: Puneet
+  last_name: Mathur
+  website: https://scholar.google.com
+
+haolial:
+  first_name: Haoliang
+  last_name: Wang
+  website: https://scholar.google.com
+
+jayakumars:
+  first_name: Jayakumar
+  last_name: Subramanian
+  website: https://scholar.google.com
+
+trungbui:
+  first_name: Trung
+  last_name: Bui
+  website: https://scholar.google.com
+
+nikosv:
+  first_name: Nikos
+  last_name: Vlassis
+  website: https://scholar.google.com

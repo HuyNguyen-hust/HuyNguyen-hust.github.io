@@ -1,11 +1,14 @@
 - name: University of Oregon
   description: >-
-    Ph.D. in Computer Science, advised by <a href="https://ix.cs.uoregon.edu/~thien/">Prof. Thien Huu Nguyen</a>.
+    Ph.D. in Computer Science, GPA 4.16/4.0, Excellent Degree.
+    Research Topic: Efficient LLMs.
+    Advised by <a href="https://ix.cs.uoregon.edu/~thien/">Assoc. Prof. Thien Huu Nguyen</a>.
   dates: Fall 2024 - Present
   location: Eugene, Oregon, USA
 
 - name: Hanoi University of Science and Technology
   description: >-
-    B.S. in Computer Science, advised by <a href="https://scholar.google.com.vn/citations?user=tZ78MoQAAAAJ&hl=en">Dr. Linh Ngo Van</a>.
+    B.S. in Computer Science, GPA 3.71/4.0, Excellent Degree.
+    Advised by <a href="https://scholar.google.com.vn/citations?user=tZ78MoQAAAAJ&hl=en">Dr. Linh Ngo Van</a>.
   dates: Fall 2018 - Spring 2023
   location: Hanoi, Vietnam

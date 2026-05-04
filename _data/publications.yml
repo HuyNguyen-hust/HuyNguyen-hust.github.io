@@ -1,3 +1,55 @@
+- id: lizard
+  title: "Lizard: An Efficient Linearization Framework for Large Language Models"
+  venue: ACL 2026
+  description: "An efficient linearization framework for LLMs."
+  authors:
+    - chiennv2000eq
+    - huuhuy
+    - ruyzhang
+    - haniehd
+    - puneetm
+    - vietlaieq
+    - haolial
+    - jayakumars
+    - rossi
+    - trungbui
+    - nikosv
+    - frack
+    - thiennh
+
+- id: crosslingual
+  title: "Towards Fast and Accurate Modeling for Cross-Lingual Label Projection"
+  venue: ACL 2026
+  description: "Fast and accurate modeling for cross-lingual label projection."
+  authors:
+    - thangle
+    - huuhuy
+    - anhtuan
+    - thamar
+    - thiennh
+
+- id: multilingual
+  title: "Massively Multilingual Instruction-Following Information Extraction"
+  venue: ACL 2025 Findings
+  description: "Multilingual instruction-following for information extraction."
+  authors:
+    - thangle
+    - huuhuy
+    - anhtuan
+    - thiennh
+
+- id: taipan
+  title: "Taipan: Efficient and Expressive State Space Language Models with Selective Attention"
+  venue: Arxiv
+  description: "Efficient and expressive state space language models with selective attention."
+  authors:
+    - chiennv2000
+    - huuhuy
+    - trungbui
+    - vietlai
+    - frack
+    - thiennh
+
 - id: ebmcled
   title: "Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics"
   venue: EMNLP 2023 (Findings)

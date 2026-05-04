@@ -1,18 +1,26 @@
+- date: Summer 2026
+  description: >-
+    I received a research internship offer from Amazon for Summer 2026.
+
+- date: Jun 2025 - Sep 2025
+  description: >-
+    I completed a Research Internship at Microsoft Research, working on GPU kernel optimization for LLM inference.
+
 - date: Sept 2024
   description: >-
-    I am a PhD student in Computer Science at the University of Oregon, where I am very fortunate to be advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
+    I started my Ph.D. in Computer Science at the University of Oregon, advised by <a href="https://ix.cs.uoregon.edu/~thien/">Assoc. Prof. Thien Huu Nguyen</a>.
 
 - date: Mar 2024
   description: >-
-    I implemented a faster RoPE embedding for Unsloth [PR](https://github.com/unslothai/unsloth/pull/238)
+    I implemented a faster RoPE embedding for Unsloth (<a href="https://github.com/unslothai/unsloth/pull/238">PR #238</a>).
 
 - date: Jan 2024
   description: >-
-    We introduced [Vistral](https://huggingface.co/Viet-Mistral/Vistral-7B-Chat), a state-of-the-art conversational LLM for Vietnamese.
+    We introduced <a href="https://huggingface.co/Viet-Mistral/Vistral-7B-Chat">Vistral</a>, a state-of-the-art conversational LLM for Vietnamese.
 
 - date: Oct 2023
   description: >-
-    Two papers were accepted at [EMNLP 2023](https://2023.emnlp.org/).
+    Two papers were accepted at <a href="https://2023.emnlp.org/">EMNLP 2023</a>.
 
 - date: July 2022
   description: I joined VinAI Research as a Research Resident.
