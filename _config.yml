@@ -23,7 +23,7 @@ name: Huy Nguyen
 position: Ph.D. Researcher
 email: huy.nguyenhuu.hust@gmail.com
 description: >-
-  I am a Ph.D. researcher specializing in the systems-level architecture and distributed acceleration of Large Language Models (LLMs). My work focuses on pushing the physical limits of hardware utilization, from bare-metal CUDA/Cutlass kernel engineering, to designing topology-aware 5D parallel training engines. I build the underlying computational and cross-GPU interconnect infrastructure required to eliminate network bubbles and compute bottlenecks at massive scale.
+  I am a Ph.D. researcher at the University of Oregon, co-advised by [Assoc. Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) and [Asst. Prof. Jieyang Chen](https://jieyangchen7.github.io/). I specialize in the systems-level architecture and distributed acceleration of Large Language Models (LLMs). My work focuses on pushing the physical limits of hardware utilization, from bare-metal CUDA/Cutlass kernel engineering, to designing topology-aware 5D parallel training engines. I build the underlying computational and cross-GPU interconnect infrastructure required to eliminate network bubbles and compute bottlenecks at massive scale.
 
 
   Prior to this, I completed my B.S. in Computer Science at [Hanoi University of Science and Technology](https://hust.edu.vn/) with an Excellent Degree (GPA 3.71/4.0), advised by [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).

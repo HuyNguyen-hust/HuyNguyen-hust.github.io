@@ -11,12 +11,6 @@ chiennv2000:
   last_name: Nguyen
   website: https://chiennv2000.github.io/
 
-chiennv2000eq:
-  first_name: Chien
-  middle_name: Van  
-  last_name: Nguyen*
-  website: https://chiennv2000.github.io/
-
 thiennh:
   first_name: Thien
   middle_name: Huu	
@@ -50,11 +44,6 @@ vietlai:
   last_name: Lai
   website: https://laiviet.github.io/
 
-vietlaieq:
-  first_name: Viet
-  last_name: Lai*
-  website: https://laiviet.github.io/
-
 nghiango:
   first_name: Nghia
   middle_name: Trung
@@ -70,6 +59,11 @@ rossi:
   first_name: Ryan
   last_name: A Rossi
   website: http://ryanrossi.com/
+
+jieyangchen:
+  first_name: Jieyang
+  last_name: Chen
+  website: https://jieyangchen7.github.io/
 
 thangle:
   first_name: Thang

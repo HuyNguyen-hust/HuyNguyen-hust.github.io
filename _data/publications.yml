@@ -1,14 +1,28 @@
+- id: crisp
+  title: "CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing"
+  venue: EMNLP 2026
+  project_page: https://arxiv.org/abs/2609.01925
+  description: "Input-adaptive sparse attention for long-context LLM prefilling, with up to 5.30x attention speedup at 512k tokens."
+  authors:
+    - huuhuy
+    - chiennv2000
+    - frack
+    - rossi
+    - linhnv
+    - jieyangchen
+    - thiennh
+
 - id: lizard
   title: "Lizard: An Efficient Linearization Framework for Large Language Models"
   venue: ACL 2026
   description: "An efficient linearization framework for LLMs."
   authors:
-    - chiennv2000eq
+    - chiennv2000
     - huuhuy
     - ruyzhang
     - haniehd
     - puneetm
-    - vietlaieq
+    - vietlai
     - haolial
     - jayakumars
     - rossi
