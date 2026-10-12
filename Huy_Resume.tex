@@ -1,0 +1,451 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Huy Nguyen's CV},
+    pdfauthor={Huy Nguyen},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    % \usepackage[T1]{fontenc} % this breaks sb2nov
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Huy Nguyen - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\circ$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in October 2026}\hspace{\widthof{Last updated in October 2026}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext
+    \begin{header}
+        \textbf{\fontsize{24 pt}{24 pt}\selectfont Huy Nguyen}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Eugene, Oregon}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:huy.nguyenhuu.hust@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}huy.nguyenhuu.hust@gmail.com}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:(458) 245-7465}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}(458) 245-7465}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://huynguyen-hust.github.io/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}My Website}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/huy-huu-nguyen/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}My LinkedIn}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/HuyNguyen-hust}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}HuyNguyen-hust}}%
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+
+    \section{Research Summary}
+
+        \begin{onecolentry}
+            Ph.D. researcher specializing in the systems-level architecture and distributed acceleration of Large Language Models (LLMs). My work focuses on pushing the physical limits of hardware utilization, from bare-metal CUDA/Cutlass kernel engineering, to designing topology-aware 5D parallel training engines. I build the underlying computational and cross-GPU interconnect infrastructure required to eliminate network bubbles and compute bottlenecks at massive scale.
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+    \section{Domain Expertise \& Technologies}
+
+        \begin{onecolentry}
+            \textbf{Languages \& Frameworks:} C/C++, Python, CUDA, Triton, PTX, PyTorch, Cutlass CuTe, CuTeDSL, NCCL, MPI
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{GPU Programming \& Architecture:} Asynchronous Pipelining, Persistent Kernels, Warp Specialization, Memory Coalescing, NVIDIA Hopper (TMA, WGMMA), NVIDIA Ampere
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Distributed Systems:} 5D Parallelism (DP, TP, PP, CP, EP), Customizing Collective Optimization (\texttt{all\_reduce}, \texttt{all\_to\_all}, ...)
+        \end{onecolentry}
+
+    \section{Education}
+
+        \begin{twocolentry}{
+
+        \textit{Sept 2024 – Present}}
+            \textbf{University of Oregon}
+
+            \textit{PhD in Computer Science}
+
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item GPA: 4.16/4.0, Excellent Degree
+                \item Research Topic: Efficient LLMs
+                \item Supervisor: Assoc. Prof. Thien Huu Nguyen, \mbox{\hrefWithoutArrow{mailto:thienn@uoregon.edu}{\color{black}thienn@uoregon.edu}}
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.10 cm}
+        \begin{twocolentry}{
+
+        \textit{Sept 2018 – May 2023}}
+            \textbf{Hanoi University of Science and Technology}
+
+            \textit{BS in Computer Science}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item GPA: 3.71/4.0, Excellent Degree
+                \item Advisor: Dr. Linh Ngo Van, \mbox{\hrefWithoutArrow{mailto:linhnv@soict.hust.edu.vn}{\color{black}linhnv@soict.hust.edu.vn}}
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Experience}
+
+        \begin{twocolentry}{
+        \textit{Cupertino, CA, USA}
+        \textit{Jun 2026 – Sep 2026}}
+            \textbf{Amazon AGI, Annapurna Labs}
+            \textit{Applied Scientist Intern}
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Accelerated parallel speculative decoding for Large Language Model (LLM) inference.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        \textit{Redmond, WA, USA}
+        \textit{Jun 2025 – Sep 2025}}
+            \textbf{Microsoft Research}
+            \textit{Research Intern}
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered and optimized "Megakernels" on NVIDIA GPUs to accelerate Large Language Model (LLM) inference and reduce memory-bound latency.
+                \item Designed low-level scheduling methods and custom fused operators using CUDA/Triton, maximizing hardware utilization and minimizing kernel launch overhead.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+        \textit{Hanoi, Vietnam}
+        \textit{Jul 2022 – Jul 2024}}
+            \textbf{VinAI Research}
+            \textit{AI Resident}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Supervisors:
+                    \begin{itemize}
+                        \item Asst. Prof. Luu Anh Tuan, \mbox{\hrefWithoutArrow{mailto:anhtuan.luu@ntu.edu.sg}{\color{black}anhtuan.luu@ntu.edu.sg}}
+                        \item Assoc. Prof. Thien Huu Nguyen, \mbox{\hrefWithoutArrow{mailto:thienn@uoregon.edu}{\color{black}thienn@uoregon.edu}}
+                    \end{itemize}
+                \item Projects:
+                    \begin{itemize}
+                        \item \textbf{A Spectral Viewpoint on Continual Relation Extraction}
+                        \item \textbf{Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics}
+                    \end{itemize}
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Open Source Contributions}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Unsloth (\href{https://github.com/unslothai/unsloth/pull/238}{PR \#238})}: Engineered a highly optimized rotary embedding (RoPE) kernel using OpenAI Triton.
+                \begin{itemize}
+                    \item Redesigned memory access patterns to significantly improve throughput for LLM inference and training.
+                \end{itemize}
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Projects}
+
+        \begin{twocolentry}{
+            \textit{PyTorch, NCCL, Distributed Systems}
+        }
+            \textbf{Custom 5D Parallel LLM Training Engine}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered a Megatron-style distributed LLM trainer from scratch, implementing Data (DP), Tensor (TP), and Pipeline Parallelism (PP) with micro-batch scheduling and zero-bubble gradient routing.
+                \item Architected a topology-aware Context Parallelism (CP) backend, combining DeepSpeed Ulysses for intra-node NVLink saturation and Zigzag Ring Attention for inter-node scaling.
+                \item Implemented Expert Parallelism (EP) for Mixture-of-Experts (MoE) architectures, utilizing custom autograd wrappers and \texttt{all\_to\_all} collectives for token dispatch and dynamic capacity-factor load balancing.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            \textit{CUDA, Triton, Cutlass CuTe}
+        }
+            \textbf{High-Performance GPU Kernel Suite}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered custom GEMM and FlashAttention kernels from scratch using plain CUDA and Cutlass CuTe, progressively optimizing memory access, coalescing, and multi-level tiling to outperform cuBLAS.
+                \item Utilized advanced NVIDIA Hopper hardware features, including Tensor Memory Accelerator (TMA), WGMMA instructions, asynchronous pipelining, and warp specialization.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            \textit{\href{https://huggingface.co/Viet-Mistral/Vistral-7B-Chat}{Vistral}}
+        }
+            \textbf{Vistral-7B-Chat}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Introduced Vistral-7B-chat, a SOTA conversational Large Language Model for Vietnamese. Outperforms ChatGPT and Gemini in Vietnamese benchmarks. Achieved over 100,000 downloads.
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Publications}
+
+\begin{samepage}
+    \begin{twocolentry}{EMNLP 2026}
+        \textbf{CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing} \\
+        \mbox{\textbf{\textit{Huy Huu Nguyen}}}, \mbox{Chien Van Nguyen}, \mbox{Franck Dernoncourt}, \mbox{Ryan A. Rossi}, \mbox{Linh Ngo Van}, \mbox{Jieyang Chen}, \mbox{Thien Huu Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{ACL 2026}
+        \textbf{Lizard: An Efficient Linearization Framework for Large Language Models} \\
+        \mbox{Chien Van Nguyen*}, \mbox{\textbf{\textit{Huy Huu Nguyen*}}}, \mbox{Ruiyi Zhang}, \mbox{Hanieh Deilamsalehy}, \mbox{Puneet Mathur}, \mbox{Viet Dac Lai}, \mbox{Haoliang Wang}, \mbox{Jayakumar Subramanian}, \mbox{Ryan A. Rossi}, \mbox{Trung Bui}, \mbox{Nikos Vlassis}, \mbox{Franck Dernoncourt}, \mbox{Thien Huu Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{ACL 2026}
+        \textbf{Towards Fast and Accurate Modeling for Cross-Lingual Label Projection} \\
+        \mbox{Thang Le}, \mbox{\textbf{\textit{Huy Huu Nguyen}}}, \mbox{Anh Tuan Luu}, \mbox{Thamar Solorio}, \mbox{Thien Huu Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{ACL 2025 Findings}
+        \textbf{Massively Multilingual Instruction-Following Information Extraction} \\
+        \mbox{Thang Le}, \mbox{\textbf{\textit{Huy Huu Nguyen}}}, \mbox{Luu Anh Tuan}, \mbox{Thien Huu Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{\href{https://arxiv.org/pdf/2410.18572}{Arxiv}}
+        \textbf{Taipan: Efficient and Expressive State Space Language Models with Selective Attention} \\
+        \mbox{Chien Van Nguyen}, \mbox{\textbf{\textit{Huy Huu Nguyen}}}, \mbox{Trung Bui}, \mbox{Viet Dac Lai}, \mbox{Franck Dernoncourt}, \mbox{Thien Huu Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{EMNLP 2023 Findings}
+        \textbf{A Spectral Viewpoint on Continual Relation Extraction} \\
+        \mbox{\textbf{\textit{Huy Nguyen}}}, \mbox{Chien Nguyen}, \mbox{Linh Ngo}, \mbox{Anh Luu}, \mbox{Thien Nguyen}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{twocolentry}{EMNLP 2023 Findings}
+        \textbf{Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics} \\
+        \mbox{Chien Nguyen}, \mbox{\textbf{\textit{Huy Nguyen}}}, \mbox{Franck Dernoncourt}, \mbox{Thien Nguyen}
+    \end{twocolentry}
+\end{samepage}
+
+    \section{Academic Service}
+    \textbf{Conference Reviewer}: ACL ARR 2023, ACL ARR 2024, ACL ARR 2025
+
+    \section{Awards}
+
+        \begin{twocolentry}{Academic Excellence}
+            \textbf{Prestigious Recognition}
+        \end{twocolentry}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Lokey Award (2024-25)
+                \begin{itemize}
+                    \item Prestigious award from the Department of Computer Science, University of Oregon.
+                    \item Granted to top graduate students in science fields.
+                    \item Funded by Mr. Lorry I. Lokey, allocated by UO Division of Graduate Studies.
+                \end{itemize}
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{AI Competitions}
+            \textbf{First Place Award}
+        \end{twocolentry}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item BKAI-NAVER Challenge 2022 (May 2022)
+                \begin{itemize}
+                    \item Task: Intent Detection and Slot Filling for smarthome systems.
+                \end{itemize}
+            \end{highlights}
+        \end{onecolentry}
+
+\end{document}
