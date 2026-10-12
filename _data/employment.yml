@@ -1,3 +1,9 @@
+- company: Amazon Web Services (AWS), Annapurna Labs
+  description: >-
+    Applied Scientist Intern. Worked on accelerating parallel speculative decoding for LLM inference.
+  dates: "Jun 2026 - Sep 2026"
+  location: Cupertino, CA, USA
+
 - company: Microsoft Research
   description: >-
     Research Intern. Engineered and optimized "Megakernels" on NVIDIA GPUs to accelerate LLM inference and reduce memory-bound latency. Designed low-level scheduling methods and custom fused operators using CUDA/Triton, maximizing hardware utilization.
